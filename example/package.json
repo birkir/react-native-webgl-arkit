@@ -1,0 +1,31 @@
+{
+  "name": "example",
+  "description": "react-native-webgl-arkit example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "clean": "rm -rf android/app/release.keystore",
+    "appium": "appium",
+    "build:android:key": "keytool -genkey -v -keystore android/app/release.keystore -storepass android -alias androidreleasekey -keypass android -dname 'CN=Android Debug,O=Android,C=US'",
+    "build:android:release": "cd android && ./gradlew assembleRelease --console=plain -S",
+    "build:android": "npm-run-all clean build:android:*",
+    "build:ios": "cd ios && xcodebuild build -project example.xcodeproj -scheme example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO OTHER_LDFLAGS='$(inherited) -ObjC -lc++' -destination 'platform=iOS Simulator,name=iPhone 6' -configuration Release -derivedDataPath build",
+    "test:android": "appium-helper --platform android",
+    "test:ios": "appium-helper --platform ios",
+    "test": "npm-run-all test:*"
+  },
+  "dependencies": {
+    "prop-types": "15.6.0",
+    "react": "15.4.1",
+    "react-native": "0.41.2",
+    "react-native-webgl": "0.6.0",
+    "three": "0.88.0"
+  },
+  "devDependencies": {
+    "appium": "1.6.3",
+    "npm-run-all": "^3.1.1",
+    "tape-async": "^2.1.1",
+    "tipsi-appium-helper": "1.0.0"
+  }
+}

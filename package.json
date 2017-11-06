@@ -1,0 +1,50 @@
+{
+  "name": "react-native-webgl-arkit",
+  "version": "0.1.0",
+  "description": "React Native WebGL ARKit",
+  "main": "src/index.js",
+  "scripts": {
+    "ci": "scripts/local-ci.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/birkir/react-native-webgl-arkit.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "ios",
+    "webgl",
+    "arkit"
+  ],
+  "author": "Birkir Gudjonsson <birkir.gudjonsson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/birkir/react-native-webgl-arkit/issues"
+  },
+  "homepage": "https://github.com/birkir/react-native-webgl-arkit#readme",
+  "rnpm": {
+    "commands": {
+      "prelink": "node_modules/react-native-webgl-arkit/scripts/pre-link.sh",
+      "postlink": "node_modules/react-native-webgl-arkit/scripts/post-link.sh"
+    }
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "prop-types": "*"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.0.1",
+    "eslint": "4.10.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-native": "^0.50.1"
+  }
+}
