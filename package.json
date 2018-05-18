@@ -43,8 +43,8 @@
     "eslint-plugin-react": "7.4.0"
   },
   "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-native": "^0.50.1"
+    "prop-types": "15.6.1",
+    "react": "16.3.2",
+    "react-native": "0.55.4"
   }
 }
