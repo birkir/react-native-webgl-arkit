@@ -19,7 +19,7 @@
     "prop-types": "15.6.0",
     "react": "15.4.1",
     "react-native": "0.41.2",
-    "react-native-webgl": "0.6.0",
+    "react-native-webgl": "0.8.0",
     "three": "0.88.0"
   },
   "devDependencies": {
