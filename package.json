@@ -1,6 +1,6 @@
 {
   "name": "react-native-webgl-arkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Native WebGL ARKit",
   "main": "src/index.js",
   "scripts": {
